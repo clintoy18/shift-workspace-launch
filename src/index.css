@@ -106,6 +106,12 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  /* Smooth scrolling for anchor navigation and space for fixed navbar */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem; /* matches navbar height (h-16) */
+  }
+
   body {
     @apply bg-background text-foreground;
   }
