@@ -25,21 +25,19 @@ const Hero = () => {
               <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
             </span>
             <span className="text-primary-foreground text-sm font-medium">
-              12 desks available today
+              Only 12 desks left — reserve yours today.
             </span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Shift Your Workday{" "}
-            <span className="text-primary">into High Gear</span>
+            Shift your focus{" "}
+            <span className="text-primary">to what matters.</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Book your perfect workspace in seconds. From hot desks to private offices, 
-            we've got the space that fits your flow. Real-time availability, 24/7 access, 
-            seamless payments.
+            Find and book the perfect workspace in seconds — from flexible hot desks to private cubicles. Real-time availability, 24/7 access, and secure, seamless payments.
           </p>
 
           {/* CTAs */}
@@ -48,14 +46,14 @@ const Hero = () => {
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-8 py-6 h-auto shadow-lg shadow-primary/25"
             >
-              Book a Desk
+              Book your desk
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-primary-foreground/30 text-black hover:bg-primary-foreground/10 font-semibold text-lg px-8 py-6 h-auto"
             >
-              Take a Tour
+              Schedule a tour
             </Button>
           </div>
 
@@ -67,7 +65,7 @@ const Hero = () => {
               </div>
               <div className="text-left">
                 <p className="text-2xl font-bold text-primary-foreground">500+</p>
-                <p className="text-primary-foreground/70 text-sm">Active Members</p>
+                <p className="text-primary-foreground/70 text-sm">Members</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -76,7 +74,7 @@ const Hero = () => {
               </div>
               <div className="text-left">
                 <p className="text-2xl font-bold text-primary-foreground">3</p>
-                <p className="text-primary-foreground/70 text-sm">Prime Locations</p>
+                <p className="text-primary-foreground/70 text-sm">Locations</p>
               </div>
             </div>
           </div>
