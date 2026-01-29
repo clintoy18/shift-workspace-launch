@@ -41,7 +41,7 @@ const Location = () => {
             Find your Seat
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose your seat and we'll ready it for you. Pick the one that's 
+            Choose your seat and we'll ready it Pick the one that's 
             closest to you or explore them all.
           </p>
         </div>
