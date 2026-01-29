@@ -38,10 +38,10 @@ const Location = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Find Your Space
+            Find your Seat
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Three prime locations across the Bay Area. Pick the one that's 
+            Choose your seat and we'll ready it for you. Pick the one that's 
             closest to you or explore them all.
           </p>
         </div>

@@ -23,14 +23,14 @@ const DashboardTeaser = () => {
               Your Workspace, <span className="text-primary">Your Dashboard</span>
             </h2>
             <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed">
-              Get instant access to your bookings, Wi-Fi credentials, and workspace 
+             Be a member and get instant access to your booking reservation, Wi-Fi credentials, and workspace 
               details — all in one sleek dashboard. Manage your work life with ease.
             </p>
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
             >
-              Unlock Your Dashboard
+              Be a member
             </Button>
           </div>
 
