@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const navLinks = [
     { href: "#features", label: "Services" },
@@ -35,9 +37,18 @@ const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
-              Book a Desk
+          <div className="hidden md:flex items-center gap-3">
+            <button
+              onClick={() => navigate("/login")}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Login
+            </button>
+            <Button
+              onClick={() => navigate("/register")}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+            >
+              Be a Member
             </Button>
           </div>
 
@@ -69,9 +80,26 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold w-full mt-2">
-                Book a Desk
-              </Button>
+              <div className="flex gap-2 pt-2">
+                <button
+                  onClick={() => {
+                    navigate("/login");
+                    setIsOpen(false);
+                  }}
+                  className="flex-1 px-4 py-2 text-foreground hover:text-primary transition-colors font-medium border border-border rounded-lg"
+                >
+                  Login
+                </button>
+                <Button
+                  onClick={() => {
+                    navigate("/register");
+                    setIsOpen(false);
+                  }}
+                  className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+                >
+                  Be a Member
+                </Button>
+              </div>
             </div>
           </div>
         )}
