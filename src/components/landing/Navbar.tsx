@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <img src="/public/images/logo.jpg" alt="Shift logo" className="w-8 h-8 rounded-lg object-cover" />
+            <img src="/images/logo.jpg" alt="Shift logo" className="w-8 h-8 rounded-lg object-cover" />
             <span className="font-bold text-xl text-foreground">Shift</span>
           </a>
 
