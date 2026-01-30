@@ -17,7 +17,7 @@ const CashierDashboard = () => {
 
   // Initialize booking system with dummy data
   const initialBookings = initializeDummyBookings(DUMMY_BOOKINGS as any);
-  const { seatBookings, occupied, getExpiringAlerts } = useSeatBookings(initialBookings);
+  const { seatBookings, occupied, getExpiringAlerts, addBooking } = useSeatBookings(initialBookings);
 
   // UI State
   const [zoom, setZoom] = useState(100);
@@ -67,12 +67,15 @@ const CashierDashboard = () => {
 
   const handleConfirmBooking = () => {
     if (bookingData) {
+      // Add the booking to the system
+      const totalDuration = bookingData.duration + bookingData.extraHours;
+      addBooking(bookingData.seat, totalDuration * 60); // Convert hours to minutes
+      
       setShowConfirmationModal(false);
       setSelectedSeat(null);
       setSelectedDuration(3);
       setExtraHours(0);
       setBookingData(null);
-      // TODO: Call API to create booking when backend is available
     }
   };
 
