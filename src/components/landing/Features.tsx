@@ -10,7 +10,7 @@ const Features = () => {
       icon: Clock,
       title: "Real-Time Availability",
       description:
-        "See which desks and rooms are open right now. No more guesswork or double bookings.",
+        "View live desk and room availability at a glance, so you always know what’s free before you arrive.",
       visual: (
         <div className="mt-4 p-4 bg-secondary rounded-lg">
           <div className="grid grid-cols-4 gap-2">
@@ -40,9 +40,9 @@ const Features = () => {
     },
     {
       icon: Key,
-      title: "24/7 Access Control",
+      title: "Plug & Play",
       description:
-        "Your smartphone is your key. Secure digital access whenever you need it.",
+        "Fully equipped workspaces with power outlets and high-speed Wi-Fi—just sit down and get started.",
       visual: (
         <div className="mt-4 p-4 bg-secondary rounded-lg flex items-center justify-center">
           <div className="relative">
@@ -63,9 +63,9 @@ const Features = () => {
     },
     {
       icon: CreditCard,
-      title: "Seamless Payments",
+      title: "Free Wifi",
       description:
-        "Automated billing, instant invoices, and zero hassle. Focus on work, not paperwork.",
+        "Enjoy fast, reliable, and unlimited Wi-Fi at no extra cost, included with every visit.",
       visual: (
         <div className="mt-4 p-4 bg-secondary rounded-lg">
           <div className="space-y-2">
@@ -87,41 +87,55 @@ const Features = () => {
     },
     {
       icon: LayoutGrid,
-      title: "Select Your Zone",
+      title: "Membership Discounts",
       description:
-        "Choose between flexible hot desks or your own dedicated office space.",
+        "Choose a workspace that fits your style and unlock exclusive member-only rates and perks.",
       visual: (
-        <div className="mt-4 p-4 bg-secondary rounded-lg">
-          <div className="grid grid-cols-2 gap-2">
-            <button
-              onClick={() => setSelectedZone("hot")}
-              className={`p-3 rounded-lg text-left transition-all ${
-                selectedZone === "hot"
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-card hover:bg-card/80"
-              }`}
-            >
-              <p className="font-semibold text-sm">Hot Desk</p>
-              <p className={`text-xs mt-1 ${selectedZone === "hot" ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
-                Flexible seating
-              </p>
-            </button>
-            <button
-              onClick={() => setSelectedZone("dedicated")}
-              className={`p-3 rounded-lg text-left transition-all ${
-                selectedZone === "dedicated"
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-card hover:bg-card/80"
-              }`}
-            >
-              <p className="font-semibold text-sm">Dedicated</p>
-              <p className={`text-xs mt-1 ${selectedZone === "dedicated" ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
-                Your own space
-              </p>
-            </button>
-          </div>
-        </div>
-      ),
+  <div className="mt-4 p-4 bg-secondary rounded-lg">
+    <div className="grid grid-cols-2 gap-2">
+      <button
+        onClick={() => setSelectedZone("hot")}
+        className={`p-3 rounded-lg text-left transition-all ${
+          selectedZone === "hot"
+            ? "bg-primary text-primary-foreground"
+            : "bg-card hover:bg-card/80"
+        }`}
+      >
+        <p className="font-semibold text-sm">10% Discount</p>
+        <p
+          className={`text-xs mt-1 ${
+            selectedZone === "hot"
+              ? "text-primary-foreground/80"
+              : "text-muted-foreground"
+          }`}
+        >
+          All desk & room bookings
+        </p>
+      </button>
+
+      <button
+        onClick={() => setSelectedZone("dedicated")}
+        className={`p-3 rounded-lg text-left transition-all ${
+          selectedZone === "dedicated"
+            ? "bg-primary text-primary-foreground"
+            : "bg-card hover:bg-card/80"
+        }`}
+      >
+        <p className="font-semibold text-sm">2 Hours Free</p>
+        <p
+          className={`text-xs mt-1 ${
+            selectedZone === "dedicated"
+              ? "text-primary-foreground/80"
+              : "text-muted-foreground"
+          }`}
+        >
+          Meeting room credits
+        </p>
+      </button>
+    </div>
+  </div>
+)
+
     },
   ];
 
@@ -134,8 +148,8 @@ const Features = () => {
             The Plug & Play Promise
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to work smarter, not harder. We handle the details 
-            so you can focus on what matters.
+            Everything you need to work smarter, not harder. We handle the
+            details so you can focus on what matters.
           </p>
         </div>
 
@@ -155,7 +169,9 @@ const Features = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-2">
                       {feature.title}
                     </h3>
-                    <p className="text-muted-foreground">{feature.description}</p>
+                    <p className="text-muted-foreground">
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
                 {feature.visual}
