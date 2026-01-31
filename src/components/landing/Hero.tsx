@@ -37,7 +37,9 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Find and book the perfect workspace in seconds — from flexible hot desks to private cubicles. Real-time availability, 24/7 access, and secure, seamless payments.
+            Find and book the perfect workspace in seconds — from flexible hot
+            desks to private cubicles. Real-time availability, 24/7 access, and
+            secure, seamless payments.
           </p>
 
           {/* CTAs */}
@@ -46,14 +48,14 @@ const Hero = () => {
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-8 py-6 h-auto shadow-lg shadow-primary/25"
             >
-              Book your desk
+              Be a member
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-primary-foreground/30 text-black hover:bg-primary-foreground/10 font-semibold text-lg px-8 py-6 h-auto"
             >
-              Schedule a tour
+              Explore Seats
             </Button>
           </div>
 
@@ -64,7 +66,9 @@ const Hero = () => {
                 <Users className="w-6 h-6 text-primary" />
               </div>
               <div className="text-left">
-                <p className="text-2xl font-bold text-primary-foreground">500+</p>
+                <p className="text-2xl font-bold text-primary-foreground">
+                  500+
+                </p>
                 <p className="text-primary-foreground/70 text-sm">Members</p>
               </div>
             </div>
@@ -73,8 +77,12 @@ const Hero = () => {
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
               <div className="text-left">
-                <p className="text-2xl font-bold text-primary-foreground">3</p>
-                <p className="text-primary-foreground/70 text-sm">Locations</p>
+                <p className="text-lg font-bold text-primary-foreground">
+                  Mandaue City, Cebu
+                </p>
+                <p className="text-primary-foreground/70 text-sm">
+                  Philippines
+                </p>
               </div>
             </div>
           </div>
